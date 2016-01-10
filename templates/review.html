@@ -1,0 +1,52 @@
+<div class="mesType">
+                        <div class="mesTypeLft lft">
+                            <div class="mesTypeLftTop">Fit</div>
+                            <div class="linelft"></div>
+                            <ul id="reviewFetValKameez">
+                                <li data-ng-repeat="fit in ctrl.items.items[0]  track by $index">
+                                    <label>{{fit.header}}</label><span>{{fit.size}}</span></li>
+                                <li>
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="mesTypeCnt lft">
+                            <div class="mesTypeLftTop stylColr">
+                                Style</div>
+                            <div class="linelft"></div>
+                            <div id="reviewStyleKameez">
+                            <div id="ReSemiStichStyleBoxKameez">
+                                <div class="stylImgBx lft" data-ng-repeat="st in ctrl.items.items[1]  track by $index" data-ng-if="st.srcImg!=''" data-ng-init="name=['Simple V','','Simple V','','Full Sleeves']">
+                                    <span>{{st.headerg}}</span><br>
+                                    <img class="reFnStyleImage" style="width: 79px; height: 86px;" src="{{st.srcImg}}" alt=""><br>
+                                    <p class="reFrontNeckStyle">{{name[$index]}}</p>
+                                </div>
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <ul id="reviewFetValKameez">
+                                    <li data-ng-repeat="st in ctrl.items.items[1]  track by $index" data-ng-if="st.header!=''">
+                                        <label>{{st.header}}</label><span>{{st.size}}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="mesTypeRgt lft">
+                            <div class="mesTypeLftTop adornColr">
+                                Adornment</div>
+                            <div class="linelft"></div>
+                            <div id="readronment" class="disnone" style="display: block;">
+                                <div class="mesTypeRgtImgBx">
+                                    <div class="stylImgBx lft" data-ng-repeat="st in ctrl.items.items[2] track by $index" data-ng-if="st.srcImg!=''" data-ng-init="name=['Back Knot','Gold']">
+                                    	<img id="reFnStyleImage" style="width: 79px; height: 86px;" src="{{st.srcImg}}" alt=""><br>
+                                        <p id="reAdornment">{{name[$index]}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comingSoon" style="display: none;">
+                                No Adornment Selection for Blouse</div>
+                            <div class="clr">
+                            </div>
+                        </div>
+                    </div>
